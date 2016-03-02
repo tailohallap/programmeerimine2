@@ -1,24 +1,9 @@
 <?php
-
-echo "<body style='background-color:pink'>";
-$item = json_decode(file_get_contents("data.txt"), 2);
-$item = $item[$_GET["key"]];
-
+require_once("api.php");
+$item = vaata_API($_GET["key"]);
 ?>
-
-<table align="center" cellpadding="7" rowspan="7">
+<table align="left" cellpadding="5" rowspan="5">
 	<tr>
-		<br>
-	<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-		<center>
-		<h1><?=$item["kasutaja"]?>&nbsp;on sinu nimi :)</h1>
-		</center>
-		</tr>
-</table>
-
+		<th>Kasutaja: </th><td><?=$item["kasutaja"]?></td>
+	</tr>
+	</table>
