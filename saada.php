@@ -19,30 +19,30 @@ else {
 	}
 ?>
 <?php
-if ($kontroll == 0){?>
-<div class="container">
-  <form role="form" action="index.php" method="get"><br><br>
+	if ($kontroll == 0){?>
+	<div class="container">
+	<form role="form" action="index.php" method="get"><br><br>
   
-  <p><b>Lisatud!</b></p>
+	<p><b>Lisatud!</b></p>
   
-  <button type="submit" class="btn btn-default">Tagasi</button>
-  </form>
-</div>
-</body>
-</html>
+	<button type="submit" class="btn btn-default">Tagasi</button>
+	</form>
+	</div>
+	</body>
+	</html>
 <?php
 }
 else {?>
-<div class="container">
-  <form role="form" action="index.php" method="get"><br><br>
+	<div class="container">
+	<form role="form" action="index.php" method="get"><br><br>
   
-  <p><b>Muudetud!</b></p>
+	<p><b>Muudetud!</b></p>
   
-  <button type="submit" class="btn btn-default">Tagasi</button>
-  </form>
-</div>
-</body>
-</html>
+	<button type="submit" class="btn btn-default">Tagasi</button>
+	</form>
+	</div>
+	</body>
+	</html>
 <?php
 }
 ?>
