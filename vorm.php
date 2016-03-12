@@ -13,14 +13,15 @@
 </div>
 <center><input type="text" value="" name="kasutaja" id="kasutaja" placeholder="Kirjuta nimi"><br>
 <input type="hidden" id="kontroll" name="kontroll" value=0>
+<br>
 <button class="OK" type="submit" title="OK"><em>Lisa tabelisse</em></button></center><br>
 
 </form>
 </div>
 </header>
 </div>
-
 </body>
 </html>
+
 
 
