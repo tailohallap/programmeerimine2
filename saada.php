@@ -5,7 +5,7 @@ if ($tuvasta == 0){
 	$item = array(
 	"id" => $_POST["id"],
 	"kasutaja" => $_POST["kasutaja"],
-	"kontroll" => $_POST["kontroll"]);
+	"tuvasta" => $_POST["tuvasta"]);
 	
 	salvesta_API($item);
 	}
@@ -13,7 +13,7 @@ else {
 	$item = array(
 	"id" => $_POST["id"],
 	"kasutaja" => $_POST["kasutaja"],
-	"kontroll" => $_POST["kontroll"]);
+	"tuvasta" => $_POST["tuvasta"]);
 	
 	muuda_API($item);
 	}
