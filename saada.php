@@ -1,7 +1,7 @@
 <?php
 require_once("api.php");
-$kontroll = $_POST["kontroll"];
-if ($kontroll == 0){
+$tuvasta = $_POST["tuvasta"];
+if ($tuvasta == 0){
 	$item = array(
 	"id" => $_POST["id"],
 	"kasutaja" => $_POST["kasutaja"],
