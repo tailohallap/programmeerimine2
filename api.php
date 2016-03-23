@@ -1,9 +1,8 @@
 <?php
-date_default_timezone_set("Europe/Tallinn");
-  
+
 function salvesta_API($item) {
-    $kasutaja = $item["kasutaja"];
-    $id = file_get_contents("id.txt");
+    	$kasutaja = $item["kasutaja"];
+    	$id = file_get_contents("id.txt");
 	$data = json_decode(file_get_contents("data.json"), 2);
 	$data[] = array(
 		"id" => $id,
@@ -24,7 +23,7 @@ function vaata_API($key) {
 
 function muuda_API($item) {
 	$id = $item["id"];
-    $kasutaja = $item["kasutaja"];
+    	$kasutaja = $item["kasutaja"];
 	
 	$id = intval($id);
 	$data = json_decode(file_get_contents("data.json"), true);
