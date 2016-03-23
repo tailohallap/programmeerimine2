@@ -1,6 +1,6 @@
 <?php
 
-function salvesta_API($item) {
+function salvesta_kasutaja_API($item) {
     	$kasutaja = $item["kasutaja"];
     	$id = file_get_contents("id.txt");
 	$data = json_decode(file_get_contents("data.json"), 2);
@@ -14,14 +14,14 @@ function salvesta_API($item) {
 	return true;
 }
 
-function vaata_API($key) {
+function vaata_kasutajat_API($key) {
 	$item = json_decode(file_get_contents("data.json"), true);
 	$item = $item[$key];
 	return $item;
 	
 }
 
-function muuda_API($item) {
+function muuda_kasutajat_API($item) {
 	$id = $item["id"];
     	$kasutaja = $item["kasutaja"];
 	
@@ -33,7 +33,7 @@ function muuda_API($item) {
 	file_put_contents("data.json", json_encode($data, JSON_PRETTY_PRINT));
 	return true;
 }
-function kustuta_API($id) {
+function kustuta_kasutaja_API($id) {
 	$array1 = json_decode(file_get_contents("data.json"), true);
 	$array2 = $array1[$id];
 	$id_nr = intval($array2["id"]);
@@ -42,7 +42,7 @@ function kustuta_API($id) {
 	
 }
 
-function kasutaja_API() {
+function kasutaja_nimikiri_API() {
 	$items = json_decode(file_get_contents("data.json"), 2);
 	if(is_array($items)) {
 		foreach($items as $key => $item)
