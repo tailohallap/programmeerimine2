@@ -14,7 +14,7 @@
 
 		<?php 
 			require_once("api.php"); 
-			$items = kasutaja_API(); 
+			$items = kasutaja_nimikiri_API(); 
  	 
 			foreach ((array) $items as $key => $item) { 
 		?> 
