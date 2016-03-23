@@ -19,30 +19,20 @@ else {
 	}
 ?>
 <?php
-	if ($kontroll == 0){?>
-	<div class="container">
-	<form role="form" action="index.php" method="get"><br><br>
-  
-	<p><b>Lisatud!</b></p>
-  
-	<button type="submit" class="btn btn-default">Tagasi</button>
-	</form>
-	</div>
-	</body>
-	</html>
-<?php
+if ($tuvasta == 0) {
+  print '<div class="container">
+           <form role="form" action="form.php" method="get"><br><br>
+             <p><b>Õpilane on lisatud!</b></p>
+             <button type="submit" class="btn btn-default">Tagasi</button>
+           </form>
+           </div>';
 }
-else {?>
-	<div class="container">
-	<form role="form" action="index.php" method="get"><br><br>
-  
-	<p><b>Muudetud!</b></p>
-  
-	<button type="submit" class="btn btn-default">Tagasi</button>
-	</form>
-	</div>
-	</body>
-	</html>
-<?php
+else {
+  print '<div class="container">
+           <form role="form" action="index.php" method="get"><br><br>
+             <p><b>Õpilase andmed muudetud!</b></p>
+             <button type="submit" class="btn btn-default">Tagasi</button>
+           </form>
+         </div>';
 }
 ?>
