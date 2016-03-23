@@ -1,6 +1,6 @@
 <?php
 	require_once("api.php");
-	$item = vaata_API($_GET["key"]);
+	$item = vaata_kasutajat_API($_GET["key"]);
 ?>
 <table align="left" cellpadding="5" rowspan="5">
 	<tr>
