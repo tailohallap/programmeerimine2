@@ -15,7 +15,7 @@ else {
 	"kasutaja" => $_POST["kasutaja"],
 	"tuvasta" => $_POST["tuvasta"]);
 	
-	muuda_API($item);
+	muuda_kasutajat_API($item);
 	}
 ?>
 <?php
