@@ -7,7 +7,7 @@ if ($tuvasta == 0){
 	"kasutaja" => $_POST["kasutaja"],
 	"tuvasta" => $_POST["tuvasta"]);
 	
-	salvesta_API($item);
+	salvesta_kasutaja_API($item);
 	}
 else {
 	$item = array(
