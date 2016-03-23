@@ -22,7 +22,7 @@ else {
 if ($tuvasta == 0) {
   print '<div class="container">
            <form role="form" action="form.php" method="get"><br><br>
-             <p><b>Õpilane on lisatud!</b></p>
+             <p><b>Kasutaja lisatud!</b></p>
              <button type="submit" class="btn btn-default">Tagasi</button>
            </form>
            </div>';
@@ -30,7 +30,7 @@ if ($tuvasta == 0) {
 else {
   print '<div class="container">
            <form role="form" action="index.php" method="get"><br><br>
-             <p><b>Õpilase andmed muudetud!</b></p>
+             <p><b>Kasutaja muudetud!</b></p>
              <button type="submit" class="btn btn-default">Tagasi</button>
            </form>
          </div>';
