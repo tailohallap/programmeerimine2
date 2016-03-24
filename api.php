@@ -44,10 +44,5 @@ function kustuta_kasutaja_API($id) {
 
 function kasutaja_nimikiri_API() {
 	$items = json_decode(file_get_contents("data.json"), 2);
-	if(is_array($items)) {
-		foreach($items as $key => $item)
-		
-	return $items;
-	}
 }
 ?>
